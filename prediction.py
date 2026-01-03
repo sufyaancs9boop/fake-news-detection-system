@@ -4,7 +4,10 @@ Created on Mon Dec  4 17:45:40 2017
 
 @author: NishitP
 """
+import sklearn.linear_model._logistic as _logistic
+import sys
 
+sys.modules['sklearn.linear_model.logistic'] = _logistic
 import pickle
 
 #doc_new = ['obama is running for president in 2016']
